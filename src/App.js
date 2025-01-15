@@ -85,16 +85,16 @@ function App() {
           <p>If you’d like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
           <div className="contact-links">
             <a href="https://github.com/kendallburkett" target="_blank" rel="noreferrer">
-              <img src={githubLogo} alt="GitHub" /> GitHub
+              <img src={github-logo} alt="GitHub" /> GitHub
             </a>
             <a href="mailto:kendall.burkett@example.com" target="_blank" rel="noreferrer">
-              <img src={gmailLogo} alt="Email" /> Email
+              <img src={gmail-logo} alt="Email" /> Email
             </a>
             <a href="https://linkedin.com/in/kendallburkett" target="_blank" rel="noreferrer">
-              <img src={linkedinLogo} alt="LinkedIn" /> LinkedIn
+              <img src={linkedin-logo} alt="LinkedIn" /> LinkedIn
             </a>
             <a href="https://kendallburkett.github.io" target="_blank" rel="noreferrer">
-              <img src={safariLogo} alt="Website" /> Website
+              <img src={safari-logo} alt="Website" /> Website
             </a>
           </div>
         </div>
