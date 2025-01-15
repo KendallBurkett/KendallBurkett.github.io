@@ -1,9 +1,5 @@
 import React from "react";
 import "./index.css";
-import githubLogo from "./images/github-logo.png";
-import gmailLogo from "./images/gmail-logo.png";
-import linkedinLogo from "./images/linkedin-logo.png";
-import safariLogo from "./images/safari-logo.png";
 
 function App() {
   return (
@@ -84,17 +80,14 @@ function App() {
           <h2>Contact</h2>
           <p>If you’d like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
           <div className="contact-links">
-            <a href="https://github.com/kendallburkett" target="_blank" rel="noreferrer">
-              <img src={github-logo} alt="GitHub" /> GitHub
+            <a href="mailto:kendall.burkett@example.com">
+              <img src="/icons/email-icon.png" alt="Email" /> Email
             </a>
-            <a href="mailto:kendall.burkett@example.com" target="_blank" rel="noreferrer">
-              <img src={gmail-logo} alt="Email" /> Email
+            <a href="https://www.linkedin.com/in/kendallburkett/">
+              <img src="/icons/linkedin-icon.png" alt="LinkedIn" /> LinkedIn
             </a>
-            <a href="https://linkedin.com/in/kendallburkett" target="_blank" rel="noreferrer">
-              <img src={linkedin-logo} alt="LinkedIn" /> LinkedIn
-            </a>
-            <a href="https://kendallburkett.github.io" target="_blank" rel="noreferrer">
-              <img src={safari-logo} alt="Website" /> Website
+            <a href="https://github.com/kendallburkett">
+              <img src="/icons/github-icon.png" alt="GitHub" /> GitHub
             </a>
           </div>
         </div>
