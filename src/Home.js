@@ -15,7 +15,6 @@ function Home() {
           </ul>
         </nav>
       </header>
-      {/* Add content here for the home page */}
     </div>
   );
 }
