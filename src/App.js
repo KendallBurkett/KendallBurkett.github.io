@@ -1,16 +1,33 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Portfolio from "./Portfolio";
+import React from 'react';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import './App.css';
+
+// Import pages
+import About from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-      </Routes>
-    </Router>
+    <HashRouter>
+      <div className="App">
+        <Header />
+        <main>
+          <Routes>
+            {/* Redirect root ("/") to "/home" */}
+            <Route path="/" element={<Navigate to="/home" replace />} />
+            <Route path="/home" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </HashRouter>
   );
 }
 
