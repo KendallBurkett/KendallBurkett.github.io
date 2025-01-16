@@ -1,14 +1,9 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
-
-function ResumeRedirect() {
-  // Redirects to the PDF file
-  window.location.href = "./Kendall_Burkett_Resumé.pdf";
-  return null; // Avoid rendering anything
-}
+import Resume from "./pages/Resume"; // Import the Resume component
 
 function App() {
   return (
@@ -20,8 +15,8 @@ function App() {
           <Route path="/" element={<About />} />
           {/* Portfolio page */}
           <Route path="/Portfolio" element={<Portfolio />} />
-          {/* Redirect to the PDF file */}
-          <Route path="/Resume" element={<ResumeRedirect />} />
+          {/* Resume page */}
+          <Route path="/Resume" element={<Resume />} />
         </Routes>
       </div>
     </Router>

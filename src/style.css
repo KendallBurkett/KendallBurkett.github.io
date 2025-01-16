@@ -175,3 +175,11 @@ footer {
     margin-top: 20px;
     font-size: 0.9rem;
   }
+
+  .resume-page .download-button {
+    display: none; /* Initially hidden */
+  }
+  
+  .resume-page div:hover .download-button {
+    display: inline-block; /* Shows the button on hover */
+  }
