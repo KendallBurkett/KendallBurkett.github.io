@@ -1,5 +1,5 @@
 import React from "react";
-import "pages/Portfolio.css"; // Ensure this path matches your project structure
+import "../style.css"; // Ensure this path matches your project structure
 
 const Portfolio = () => {
   return (
