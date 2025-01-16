@@ -5,7 +5,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       <h1>Portfolio</h1>
-      <p>UNDER CONSTRUCTION:</p>
+      <p>UNDER CONSTRUCTION: For now check out my github repositories at https://github.com/KendallBurkett?tab=repositories</p>
       {/* Add portfolio content here */}
     </div>
   );
