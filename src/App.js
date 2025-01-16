@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 
 function BlankPortfolioPage() {
   return (
@@ -20,7 +19,6 @@ function App() {
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/portfolio" element={<BlankPortfolioPage />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
