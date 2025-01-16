@@ -105,10 +105,52 @@ const About = () => {
             <p>
               <strong>2021–2023:</strong> Achieved $6.5M+ in revenue and
               acquired 1,700+ clients by utilizing data-driven strategies and
-              innovative outreach.
+              innovative outreach. Consistently exceeded targets, earning
+              multiple promotions while leading team initiatives, improving
+              onboarding, and refining sales tactics to penetrate new markets.
             </p>
           </div>
-          {/* Add more timeline items here */}
+          <div className="timeline-item">
+            <h3>Freelance Developer</h3>
+            <p>
+              <strong>2020–2021:</strong> Leveraged technical expertise to
+              freelance as a web developer during the pandemic, building and
+              maintaining custom web applications for clients. This experience
+              expanded my skills in web development and client collaboration.
+            </p>
+          </div>
+          <div className="timeline-item">
+            <h3>Geek Squad Technician</h3>
+            <p>
+              <strong>2015–2021:</strong> Provided technical support both
+              in-store and in clients' homes, troubleshooting and repairing
+              hardware, software, and connectivity issues. Educated clients on
+              maximizing their technology, developing strong customer service
+              and problem-solving skills.
+            </p>
+          </div>
+          <div className="timeline-item">
+            <h3>Salesman - Cowboy Harley-Davidson</h3>
+            <p>
+              <strong>2011–2015:</strong> Excelled in personalized customer
+              outreach, earning invitations to sell at events nationwide.
+              Strengthened sales expertise and customer engagement skills while
+              representing a globally recognized brand.
+            </p>
+          </div>
+          <div className="timeline-item">
+            <h3>Military Service - USMC</h3>
+            <p>
+              <strong>2006–2010:</strong> Served with distinction during two
+              deployments to Iraq and one to Afghanistan, managing complex
+              operations in dynamic and high-pressure environments. As a
+              Corporal of Marines, I was entrusted with significant
+              decision-making responsibilities to ensure mission success while
+              fostering respectful relationships with local communities and
+              adhering to military and cultural customs. These experiences
+              honed my leadership, adaptability, and problem-solving abilities.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -139,6 +181,18 @@ const About = () => {
                 className="contact-icon"
               />{" "}
               LinkedIn
+            </a>
+            <a
+              href="https://github.com/kendallburkett"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="icons/github-logo.png"
+                alt="GitHub Logo"
+                className="contact-icon"
+              />{" "}
+              GitHub
             </a>
           </div>
         </div>
