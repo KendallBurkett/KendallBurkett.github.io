@@ -19,7 +19,7 @@ function App() {
           <Navbar />
           <Routes>
             {/* Redirect '/' to '/About' */}
-            <Route path="/" element={<Navigate to="/About" replace />} />
+            <Route path="/" element={<Navigate to="./pages/About" replace />} />
             <Route path="/About" element={<About />} />
             <Route path="/Portfolio" element={<Portfolio />} />
           </Routes>
