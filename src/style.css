@@ -137,8 +137,8 @@ body {
   
 /* Contact Links Container */
 .contact-links img {
-    width: 36px; /* Set the desired width */
-    height: 36px; /* Set the desired height */
+    width: 64px; /* Set the desired width */
+    height: 64px; /* Set the desired height */
     object-fit: contain; /* Ensures the logo scales proportionally without distortion */
     margin-right: 10px; /* Adds spacing between the icon and the text */
     display: inline-block; /* Aligns the icons properly */
