@@ -13,17 +13,19 @@ function BlankPortfolioPage() {
 }
 
 function App() {
-  return (
-    <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/portfolio" element={<BlankPortfolioPage />} />
-        </Routes>
-      </div>
-    </Router>
-  );
-}
-
-export default App;
+    return (
+      <Router>
+        <div>
+          <Navbar />
+          <Routes>
+            {/* Redirect '/' to '/About' */}
+            <Route path="/" element={<Navigate to="/About" replace />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Portfolio" element={<Portfolio />} />
+          </Routes>
+        </div>
+      </Router>
+    );
+  }
+  
+  export default App;
