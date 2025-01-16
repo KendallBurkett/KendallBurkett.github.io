@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact">
       <h1>Contact</h1>
       <p>
-        Feel free to reach out via email: <a href="mailto:kendall.burkett@gmail.com">yourname@example.com</a>
+        Feel free to reach out via email: <a href="kendall.burkett@gmail.com">kendall.burkett@gmail.com</a>
       </p>
     </section>
   );
