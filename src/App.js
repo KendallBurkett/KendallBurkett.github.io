@@ -1,33 +1,29 @@
-import React from 'react';
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
-// Import pages
-import About from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
-import Contact from './pages/Contact';
+function BlankPortfolioPage() {
+  return (
+    <div style={{ backgroundColor: "#101c3a", height: "100vh", color: "#fff" }}>
+      <h1 style={{ textAlign: "center", paddingTop: "20%" }}>Portfolio</h1>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <HashRouter>
-      <div className="App">
-        <Header />
-        <main>
-          <Routes>
-            {/* Redirect root ("/") to "/home" */}
-            <Route path="/" element={<Navigate to="/home" replace />} />
-            <Route path="/home" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/portfolio" element={<BlankPortfolioPage />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
