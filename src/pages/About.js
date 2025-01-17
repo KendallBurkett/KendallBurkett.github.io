@@ -183,7 +183,7 @@ const About = () => {
               LinkedIn
             </a>
             <a
-              href="https://github.com/kendallburkett"
+              href="https://github.com/KendallBurkett?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
             >
